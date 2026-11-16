@@ -20,6 +20,7 @@
     --bg:#f5f7fd; --bg2:#eaeefa; --card:#ffffff; --line:#d9e0f3;
     --text:#161c33; --muted:#59648a; --accent:#0a7cc4; --accent2:#5b3fe0;
     --shadow:0 10px 30px rgba(30,50,120,.12);
+    --good:#0f9d6b;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -41,6 +42,8 @@
   nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
   .logo{font-family:'JetBrains Mono',monospace;font-weight:500;color:var(--text)}
   .logo span{color:var(--accent)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-img{width:34px;height:34px;border-radius:10px;object-fit:cover;display:block}
   .links{display:flex;gap:22px;align-items:center}
   .links a{color:var(--muted);font-size:.92rem;font-weight:500}
   .links a:hover{color:var(--text);text-decoration:none}
@@ -125,7 +128,10 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#top">&lt;<span>nawaz</span>/&gt;</a>
+     <!-- <a class="logo" href="#top">&lt;<span>nawaz</span>/&gt;</a> -->
+     <a class="logo" href="#top">
+  <img src="photo.jpg" alt="" class="logo-img">
+  <span class="logo-text">&lt;<span>nawaz</span>/&gt;</span></a>
     <div class="links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
