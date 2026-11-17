@@ -362,7 +362,8 @@
     tbtn.setAttribute('aria-label', 'Switch to ' + next + ' mode');
   }
   let saved = null; try { saved = localStorage.getItem('theme'); } catch(e){}
-  setTheme(saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+  // setTheme(saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'));
+  setTheme(saved || 'dark');
   tbtn.onclick = () => {
     const t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     setTheme(t); try { localStorage.setItem('theme', t); } catch(e){}
